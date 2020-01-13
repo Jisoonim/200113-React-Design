@@ -1,25 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import About from './components/About';
+import Nav from './components/Nav';
+import Experience from './components/Experience';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <> 
+    <Nav></Nav>
+ <div class="container-fluid p-0">
+   <About></About>
+   <Experience></Experience>
+ </div>
+   </> //프래그먼트(Fragment)
   );
 }
 
